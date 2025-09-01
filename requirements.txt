@@ -1,0 +1,13 @@
+# Core dependencies
+chatterbox-tts>=0.1.2
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+torchaudio>=2.0.0
+
+# Service management
+psutil>=5.9.0
+requests>=2.31.0
+
+# macOS notification support (optional)
+pyobjc-framework-Cocoa>=11.0  # For notification reader

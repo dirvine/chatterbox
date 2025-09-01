@@ -1,0 +1,16 @@
+[project]
+name = "chatterbox-service"
+version = "0.1.0"
+description = "ChatterBox TTS Service - Local text-to-speech REST API"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "chatterbox-tts>=0.1.2",
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "pydantic>=2.0.0",
+    "torchaudio>=2.0.0",
+]
+
+[tool.setuptools]
+py-modules = []

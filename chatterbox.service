@@ -1,0 +1,15 @@
+[Unit]
+Description=ChatterBox TTS Service
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/Users/davidirvine/Desktop/Devel/projects/chatterbox
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+ExecStart=/usr/bin/env python3 /Users/davidirvine/Desktop/Devel/projects/chatterbox/tts_service.py --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
